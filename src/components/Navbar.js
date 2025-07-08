@@ -23,7 +23,7 @@ const navbar = () => {
               </li>
             );
           })}
-{/* instead of write the list belo like this, instead you can iterate it above like that */}
+          {/* instead of write the list belo like this, instead you can iterate it above like that */}
           {/* <li>
             <a href="#home" className="nav-link">
               {" "}
@@ -54,19 +54,20 @@ const navbar = () => {
         </ul>
 
         <ul className="nav-icons">
-          {socialLinks.map((social)=>{
-            <li>
-              <a
-              href={'social.href'}
-              target={"social.target"}
-              className="nav-icon"
-              rel="noreferrer"
-            >
-              <i className={social.icon}></i>
-            </a>
-          </li>
+          {socialLinks.map((social) => {
+            return (
+              <li>
+                <a
+                  href={"social.href"}
+                  target={"social.target"}
+                  className="nav-icon"
+                  rel="noreferrer"
+                >
+                  <i className={social.icon}></i>
+                </a>
+              </li>
+            );
           })}
-          
         </ul>
       </div>
     </nav>
